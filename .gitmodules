@@ -1,0 +1,5 @@
+[submodule "content"]
+	update = merge
+	branch = main
+	path = content
+	url = https://github.com/AaaBin/blog_content
