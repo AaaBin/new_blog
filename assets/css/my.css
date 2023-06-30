@@ -1,0 +1,31 @@
+:root {
+    --bg-color: #414541;
+    --nav-bg-color: #414541;
+    --link-state-color: #BF5E14;
+    --pagination-bg-color: #242424;
+    --font-color: #F2F3EC;
+    --link-color: #F2F3EC;
+}
+
+
+.common-header {
+    border-bottom: 0;
+}
+
+article.post-list {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 8px 12px 8px 12px;
+}
+
+article.post-list:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-title.draft::after{
+    content: "";
+}
+
+.post-info a:hover {
+    color: var(--post-info-color);
+    border-bottom: 0;
+}
