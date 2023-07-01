@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://blog.abin-tseng.com/'
 languageCode = 'zh-tw'
 title = "ABIN TSENG"
 
@@ -10,13 +10,17 @@ theme =  ["github.com/Mitrichius/hugo-theme-anubis"]
 
 [manu]
 [[menu.main]]
-  name = "Posts"
+  name = "All Posts"
   pageRef = "/posts"
+  weight = 1
 [[menu.main]]
   name = "About"
   pageRef = "/about"
   weight = 0
-
+[[menu.main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 10
 
 [params]
 author = "ABIN TSENG"
