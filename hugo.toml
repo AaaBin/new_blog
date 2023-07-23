@@ -36,3 +36,5 @@ utterancesLabel = "blog-comment"
 
 [params.images]
     modern_format = 'webp'
+
+googleAnalytics = 'G-31KRXTHG3J'
