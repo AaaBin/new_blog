@@ -1,8 +1,8 @@
 baseURL = 'https://blog.abin-tseng.com/'
 languageCode = 'zh-tw'
 title = "ABIN TSENG"
-
 theme =  ["github.com/Mitrichius/hugo-theme-anubis"]
+googleAnalytics = 'G-31KRXTHG3J'
 
 [module]
 [[module.imports]]
@@ -37,4 +37,3 @@ utterancesLabel = "blog-comment"
 [params.images]
     modern_format = 'webp'
 
-googleAnalytics = 'G-31KRXTHG3J'
