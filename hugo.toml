@@ -39,7 +39,7 @@ utterancesLabel = "blog-comment"
     modern_format = 'webp'
 
 # RSS
-copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright = ''
 languageCode = 'zh-tw'
 [author]
   name = 'Abin Tseng'
