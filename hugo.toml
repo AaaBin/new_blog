@@ -25,6 +25,7 @@ googleAnalytics = 'G-31KRXTHG3J'
 [params]
 author = "ABIN TSENG"
 description = "Backend Developer"
+rssAsSocialIcon = 'true'
 
 customCSS = [ "css/my.css" ]
 style = "dark-without-switcher"
@@ -36,4 +37,10 @@ utterancesLabel = "blog-comment"
 
 [params.images]
     modern_format = 'webp'
+
+# RSS
+copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+languageCode = 'zh-tw'
+[author]
+  name = 'Abin Tseng'
 

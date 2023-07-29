@@ -29,3 +29,7 @@ article.post-list:hover {
     color: var(--post-info-color);
     border-bottom: 0;
 }
+
+.social-icons a:hover {
+    color: var(--link-state-color);
+}
