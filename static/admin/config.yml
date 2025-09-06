@@ -1,0 +1,38 @@
+# site_url: https://blog.abin.com
+media_folder: static/images/uploads
+public_folder: /images/uploads
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: 'content/posts'
+    path: '{{slug}}/index'
+    media_folder: ''
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Cover Image", name: "cover_image", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+  - name: "about"
+    label: "About Page"
+    files:
+      - label: "About Page Content"
+        name: "about"
+        file: "content/about/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+local_backend: true
+backend:
+  name: git-gateway
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'

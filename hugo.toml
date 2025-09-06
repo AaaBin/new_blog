@@ -1,7 +1,8 @@
-baseURL = 'https://blog.abin-tseng.com/'
+baseURL = 'https://blog.abin.com/'
 languageCode = 'zh-tw'
-title = "ABIN TSENG"
-theme =  "github.com/Mitrichius/hugo-theme-anubis"
+title = "ABIN"
+theme = "hugo-theme-anubis"
+
 googleAnalytics = 'G-31KRXTHG3J'
 
 [module]
