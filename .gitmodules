@@ -2,3 +2,6 @@
 	path = content
 	url = https://github.com/AaaBin/blog_content
 	branch = main
+[submodule "themes/hugo-theme-anubis"]
+	path = themes/hugo-theme-anubis
+	url = https://github.com/AaaBin/hugo-theme-anubis.git
