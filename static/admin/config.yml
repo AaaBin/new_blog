@@ -1,4 +1,17 @@
-# site_url: https://blog.abin.com
+
+local_backend: true
+backend:
+  name: github
+  repo: AaaBin/blog_content
+  branch: main
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+site_url: https://blog.abin.com
 media_folder: static/images/uploads
 public_folder: /images/uploads
 collections:
@@ -26,13 +39,3 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
-local_backend: true
-backend:
-  name: git-gateway
-  commit_messages:
-    create: Create {{collection}} “{{slug}}”
-    update: Update {{collection}} “{{slug}}”
-    delete: Delete {{collection}} “{{slug}}”
-    uploadMedia: Upload “{{path}}”
-    deleteMedia: Delete “{{path}}”
-    openAuthoring: '{{message}}'
